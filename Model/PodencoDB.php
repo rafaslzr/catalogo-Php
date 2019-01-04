@@ -2,13 +2,13 @@
 
 abstract class PodencoDB {
   //private static $server = 'localhost';
-  //private static $db = 'u289636234_cacho';
-  //private static $user = 'u289636234_root';
-  //private static $password = 'cachorrin';
-  private static $server = 'localhost';
-  private static $db = 'elcachorro';
-  private static $user = 'root';
-  private static $password = 'root';
+  //private static $db = '';
+  //private static $user = '';
+  //private static $password = '';
+  private static $server = '';
+  private static $db = '';
+  private static $user = '';
+  private static $password = '';
 
   public static function connectDB() {
     try {
