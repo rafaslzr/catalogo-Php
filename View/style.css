@@ -1,0 +1,929 @@
+@charset "utf-8";
+* {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+/*el tipo de letra de toda la web*/
+@font-face {
+    font-family: goulong;
+    src: url("../View/fonts/Goulong.ttf") format("truetype");
+}
+/*el tipo de letra para el boton menu*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mt6qps');
+  src:  url('fonts/icomoon.eot?mt6qps#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mt6qps') format('truetype'),
+    url('fonts/icomoon.woff?mt6qps') format('woff'),
+    url('fonts/icomoon.svg?mt6qps#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.navbar > a  {
+    display: none;
+}
+/*fin del boton menu en las ultimas lineas lo he anulado para que salga solo para movil*/
+body {
+    font-family: goulong;
+    background-color: rgba(253,255,253,1);
+}
+#cabecera {
+    position: relative;
+    width: 600px;
+    height: 170px;
+    margin: 0 auto;
+}
+#titulo {
+    height: 80px;
+    position: relative;
+    font-family: goulong;
+    color: rgba(0,100,0,1);
+    font-size: 80px;
+    font-weight: bolder;
+    float: left;
+    top: 35px;
+}
+#actividad {
+    font-size: 30px;
+    color: orange;
+    top: -40px;
+}
+#logocab {
+    position: absolute;
+    left: 410px;
+    float: right;
+    top: 20px;
+    height: 150px;
+    margin-right: 5%;
+    vertical-align: central;
+}
+#logocab img {
+    height: 100%;
+}
+
+.icon-menu {
+    display: none;/*para mostrar->in-line contenedor de la hamburguesa*/ 
+}
+
+#bot {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 100%;
+}
+.botones {
+    display: block;
+    list-style: none;
+    height: 40px;
+}
+#boton {
+    font-family: goulong;
+    float: left;
+    margin: 5px;
+    text-decoration: none;
+}
+nav {
+    margin-bottom: 10px;
+}
+#empresa {
+    display: none;
+    box-shadow: 5px 5px 10px grey;
+    width: 1250px;
+    background-color: rgba(253,255,253,1);
+    padding: 10px;
+    font-size: 1.2em;
+    color: rgba(0,100,0,1);
+}
+#empresa span {
+    color: orange;
+}
+#empresa p:first-letter {
+    color: rgba(0,100,0,1);
+}
+#mapa {
+    display: none;
+    box-shadow: 5px 5px 10px grey;
+    width: 1270px;
+    height: 582px;
+    background-color: rgba(253,255,253,1);
+}
+#mapa p {
+    padding: 5px;
+    color: rgba(0,100,0,1);
+    font-size: 1.2em;
+}
+#mapa p span{
+    color: rgba(0,100,0,1);
+}
+#mapa p:first-letter {
+    color: rgba(0,100,0,1);
+}
+.dondeEstamos {
+
+}
+.dropmapa {
+    width: 1270px;
+    height: 450px;
+}
+.botonesme {
+    width: 1280px;
+    margin: 0 auto;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.boton-botones {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(0,100,0,1);
+    font-family: goulong;
+    font-size: 16px;
+}
+.boton-botones:hover {
+    color: orange;
+}
+.wraper {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+#contProducto {
+    position: relative;
+    display: inline-block;
+    height: 365px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 10px;
+    float: left;
+    background-color: rgba(0,100,0,1);
+    font-family: goulong;
+    color: orange;
+    box-shadow: 5px 5px 10px grey;
+    z-index: -1;
+}
+#nompro {
+    position: relative;
+    margin-top: 0px;
+    padding-left: 5px;
+}
+#prepro {
+    position: absolute;
+    clear: both;
+    padding-left: 5px;
+    bottom: 0px;
+    right: 3px;
+}
+#prepro span {
+    position: relative;
+    font-size: 2em;
+    color: white;
+}
+#prepro span + span {
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+}
+#co1pro {
+    padding-left: 5px;
+}
+#co2pro {
+    padding-left: 5px;
+}
+
+#imagenPro {
+    height: 300px;
+    width: 300px;
+}
+#formulario {
+    position: relative;
+    height: 555px;
+    width: 480px;
+    margin: 0 35%;
+    clear: both;
+    font-family: goulong;
+    color: rgba(0,100,0,1);
+    box-shadow: 3px 3px 10px grey;
+    padding-left: 15px;
+    top: 20px;
+}
+.formu{
+    padding: 3px;
+    }
+input {
+    margin-left: 3px;
+}
+textarea {
+    margin-left: 3px;
+}
+#contrasena {
+    position: relative;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(0,100,0,1);
+}
+.hboton {
+    font-family: goulong, sans-serif;
+    font-size: 18px;
+    background-color: rgb(0,100,0);
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+    border: 0px solid white;
+    margin-top: 5px;
+}
+.hboton:hover {
+    color: orange;
+}
+.hbotonborra {
+    font-family: goulong, sans-serif;
+    text-decoration: none;
+    color: red;
+}
+.hbotonborra:hover {
+    color: #00dd00;
+}
+.hbotonmodi {
+    font-family: goulong, sans-serif;
+    text-decoration: none;
+    color: blue;
+}
+.hbotonmodi:hover {
+    color: #00dd00;
+}
+html {/*esto hace que el footer flote al final de la pagina*/
+    position: relative;
+    min-height: 100%;
+}
+#footer {
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 100, 0);
+    position: absolute;
+    bottom: -80px;
+    vertical-align: middle;
+    display: table;
+    
+}
+#footer div {
+    display: inline;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+#footer div span {
+    color: orange;
+}
+.footder {
+    float: right;
+    padding-right: 20px;
+}
+
+
+/* barra lista-botones conf */
+
+.navbar {
+    height:40px;
+    background-color: rgba(0,100,0,1);
+    color: white;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: orange;
+}
+
+.navbar li {
+    float: left;
+    padding: 8px 8px;
+    cursor: pointer;
+    transition-duration: .5s;
+    font-weight: 300;
+    height: 24px;
+    border-right: 2px solid white;
+    min-width: 120px;
+    
+}
+.navbar li:hover {
+    background: rgba(0,80,0,1);
+    height: 24px;
+    color: orange;
+}
+.navbar ul li:hover {
+    color: orange;
+}
+.dropdown-menu {
+    margin-left: -10px;
+    padding: 0px;
+    width: auto;
+    background: rgba(0,100,0,1);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    overflow: hidden;
+    position: absolute;
+    top: 229px;
+    display: none;
+}
+.navbar .dropdown-menu a {
+    color: white;
+}
+.navbar .dropdown-menu li {
+    float: none;
+    padding: 8px 18px;
+    margin:0;
+    min-width: 100px;
+}
+.navbar .dropdown-menu li:hover {
+    background: rgba(0,80,0,1);
+}
+.navbar .dropdown-menu .divider {
+    border-bottom: 2px solid white;
+    height: 0px;
+    padding: 0px;
+}
+.dropdown-toggle li {
+    margin-left: 50px;
+    border-left: 2px solid white;
+}
+/*.arrow {
+    width:0px;
+    height:0px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: relative;
+    float: right;
+    top: 10px;
+    line-height: 1;  
+}lo activo solo si quiero las flechas en el PC*/
+
+/*aqui termina la conf de la barra de menu pc*/
+
+/* responsive media queries */
+@media (max-width: 1300px) {
+    body {
+        background-color: rgba(253,255,253,1);
+    }
+    .wraper {
+        width: 980px;
+    }
+    
+    #mapa {
+        width: 950px;
+        height: 482px;
+    }
+    #empresa {
+        width: 930px;
+    }
+    .dropmapa {
+        width: 950px;
+        height: 350px;
+    }
+    .botonesme {
+        width: 950px;
+    }
+}
+@media (max-width: 1200px) {
+    .wraper {
+        width: 640px;
+    }
+    #mapa {
+        width: 630px;
+        height: 432px;
+    }
+    #empresa {
+        width: 610px;
+    }
+    .dropmapa {
+        width: 630px;
+        height: 300px;
+    }
+    .navbar li {
+        min-width: 0px;
+    }
+    #contenedor {
+        display: none;
+    }
+    .botonesme {
+        width: 640px;
+    }
+}
+@media (max-device-width: 1024px) and (orientation:landscape) {
+    body {
+        background-color: pink;
+        
+    }
+}
+
+/*transicion a menu para aparatos de ancho de dispositivo x y pixel ratio mayor q 1.5*/
+@media (max-device-width: 768px) and (orientation:portrait) /*,(min-resolution: 1.5dppx),(-webkit-min-device-pixel-ratio : 1.5)*/ {
+    /*cabecera*/
+
+    #cabecera {
+        width: 100%;
+        height: 175px;
+    }
+    #titulo {
+    height: 100px;
+    font-size: 85px;
+    font-weight: bolder;
+    top: 15px;
+    margin-left: 70px;
+    }
+    #actividad {
+        font-size: 50px;
+        color: orange;
+        margin-top: -5px;
+    }
+    #logocab {
+        position: absolute;
+        left: 520px;
+        top: 20px;
+        height: 90px;
+        margin-left: 6px;
+    }
+    #logocab img {
+        height: 160%;
+    }
+    /*hamburguesa del menu animacion*/
+    
+    #botonhamburg {
+        position: fixed;
+        float: right;
+        height: 70px;
+        width: 88px;
+        right: 80px;
+        top: 64px;
+        background-color: transparent;
+        border: 0px;
+        /*border: 3px solid red;*/
+        z-index: 1;
+    }
+    #button {
+        width: 70px;
+        height: 70px;
+        transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+        cursor: pointer;
+        background: transparent;
+        border: 0px;
+        
+        position: absolute;
+        float: right;
+        right: 95px;
+        top: 70px;
+        color: rgba(0,100,0,1);
+      }
+
+      #button div {
+        height: 0px;
+        border: 5px solid green;
+        width: 75px;
+        display: block;
+        position: absolute;
+        transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+        background: green;
+      }
+
+      /*#button:focus {
+        outline: 0px;
+      }
+      #button div:focus {
+        outline: 0px;
+      }no se para que es*/
+
+      #button div:nth-child(1) {
+        top: 0px;
+      }
+
+      #button div:nth-child(2) {
+        top: 25px;
+      }
+
+      #button div:nth-child(3) {
+        top: 50px;
+      }
+
+      #button div:nth-child(3):before {
+        opacity: 0;
+        animation: ball 1.5s linear infinite;
+        content: '';
+        border: 2px solid green;
+        display: block;
+        position: relative;
+        top: 0.25px;
+      }
+/*
+      button:active:hover #button div:nth-child(3):before,
+      button:active #button div:nth-child(3):before,
+      button:active #button div:nth-child(2) {
+        opacity: 0;
+        transition: all 200ms;
+      }
+
+      #button:active div {
+        border: 5px solid green;
+        height: 0px;
+        border-radius: 0%;
+        margin-left: 0px;
+        margin-top: 24px;
+        animation: division 300ms linear 1;
+        width: 75px;
+        top: 0px;
+      }
+
+      #button:active div:nth-child(2) {
+        width: 0px;
+        border: 0px;
+      }
+
+      #button:active div:nth-child(3) {
+        transform: rotate(45deg);
+      }
+
+      #button:active div:nth-child(1) {
+        transform: rotate(-45deg);
+      }
+esto al aspa.js*/
+      @keyframes division {
+        0% {
+          transform: rotate(180deg);
+        }
+      }
+    
+    /*menudesplegable*/
+
+    .navbar {
+        display: none;
+        height: auto;/*height:40px;*/
+        background-color: rgba(0,100,0,1);
+        color: white;/*sin tocaaar*/
+        border-bottom: 0px solid white;/*cambiado para que no se vea borde abajo el todo el conj de menu*/
+        font-size: 50px;/*se hace mas grande para el movil*/
+        overflow: hidden;/*sin tocaaar*/
+    }
+    
+    .hor-ver {
+        display: block;/*para ocultar/mostrar menu*/
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        color: orange;
+    }
+
+    .navbar li {
+        float: none;/*float: left;este hace que el menu sea vertical /hor*/
+        padding: 0px 0px;
+        /*transition-duration: .5s;*/
+        font-weight: 300;
+        height: auto;/*height: 24px;este hace que se cree el espacio*/
+        border-right: 0px solid white;
+        border-bottom: 0px solid white;
+        border-top: 1px solid white;
+        border-left: 0px solid white;
+        margin-left: 0px;
+        
+    }
+
+    .navbar li:hover {
+        background: rgba(0,80,0,1);
+        height: auto;/*height: 24px;*/
+        color: orange;
+    }
+    .navbar ul li:hover {
+        color: orange;
+    }
+    .menu-categ {
+        padding: 12px 18px;
+        font-size: 65px;
+    }
+    .dropdown-menu {
+        margin-left: 0px;/*margin-left: -10px;*/
+        padding: 0px 0px;
+        /*width: auto;*/
+        background: rgba(0,100,0,1);
+        border-bottom: 1px solid white;
+        border-left: 0px solid white;
+        border-top: 0px solid white;
+        overflow: hidden;
+        position: static;/*position: absolute;*/
+        top: 0px;/*top: 229px;*/
+        display: none;
+    }
+    .dropdown-menu a li {
+        color: orange;
+    }
+    .dropdown-menu:last-child {
+        border-bottom: 0px solid white;
+    }
+    .divider {
+        visibility: hidden;
+    }
+    .arrow {
+        width:0px;
+        height:0px;
+        border-left:15px solid transparent; /* izquierda flecha */
+        border-right:15px solid transparent; /* derecha flecha */
+        border-top:15px solid #fff; /* base flecha y color*/
+        margin-top: 10px;
+        font-size:0px;
+        line-height:0px;
+        float: right;
+    }
+
+    /*bajo el menu > botones y desplegables*/
+    
+    .botonesme {
+        display: block;
+        width: 100%;
+        padding-top: 15px;
+        height: auto;
+        overflow: auto;
+
+    }
+    .boton-botones {
+        font-size: 58px;
+        background-color: rgb(0, 100, 0);
+        padding: 20px;
+        color: white;
+        width: 450px;
+    }
+    #botonmapa {
+        float: right;
+        margin-right: 20px;
+    }
+    .dondeEstamos {
+        font-size: 35px;
+        padding: 20px 40px;
+    }
+    #botonempresa {
+        float: left;
+        margin-left: 20px;
+    }
+    .wraper {
+        overflow: auto;
+        height: auto;
+        width: 100%;
+        /*border: 1px dotted #ff0000;*/
+        margin-top: 20px;
+    }
+    #mapa {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+    }
+    #empresa {
+        padding: 40px 0px;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px;
+    }
+    #empresa p {
+        padding: 10px 40px;
+    }
+    .dropmapa {
+        width: 100%;
+        height: 500px;
+    }
+    
+    /*el contenedor del producto*/
+    
+    #contProducto {
+        position: relative;
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        float: left;
+        background-color: rgba(0,100,0,1);
+        font-family: goulong;
+        color: orange;
+        box-shadow: 0px 0px 0px grey;
+        z-index: -1;
+        font-size: 45px;
+    }
+    #nompro {
+        position: relative;
+        margin-top: 0px;
+        padding-left: 12px;
+    }
+    #prepro {
+        position: absolute;
+        clear: both;
+        padding-right: 12px;
+        bottom: 0px;
+    }
+    #prepro span {
+        position: relative;
+        font-size: 2em;
+        color: white;
+        padding-right: -10px;
+    }
+    #prepro span + span {
+        position: relative;
+        font-size: 1.5em;
+        color: white;
+    }
+    #co1pro {
+        padding-left: 12px;
+        padding-bottom: 5px;
+    }
+    #co2pro {
+        padding-left: 12px;
+        padding-bottom: 5px;
+    }
+
+    #imagenPro {
+        width: 100%;
+        height: auto;
+    }
+    /*fin contenedor del producto*/
+    
+    /*footer*/
+    
+    #footer {
+        width: 100%;
+        height: 100px;
+        background: white;
+        position: absolute;
+        bottom: -100px;
+        vertical-align: middle;
+        display: table;
+        font-size: 38px;
+        margin-top: 20px;
+        
+    }
+    #footer div {
+        display: inline;
+        color: rgb(0, 100, 0);
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+    #footer div span {
+        color: orange;
+    }
+    .footder {
+        float: right;
+        padding-right: 20px;
+    }
+    
+}
+/*@media (max-device-width: 500px) {
+    nav {
+        margin-bottom: 300px;
+    }
+    #titulo {
+        height: 80px;
+        font-size: 50px;
+        font-weight: bolder;
+        top: 15px;
+        margin-left: 10px;
+    }
+    #logocab {
+        position: absolute;
+        left: 260px;
+        top: 10px;
+        margin-right: 5%;
+        bottom: 0px;
+        margin-left: 10px;
+    }
+    #footer div {
+        display: block;
+    }
+    .footizq {
+        padding-top: 2px;
+    }
+    .footder {
+        float: left;
+        padding-bottom: 2px;
+    }
+}*/
+
+/* subir/borrar imagen */
+
+#subirImagen {
+    background-color: rgb(250,250,250);
+    color: rgb(0,100,0);
+    font-family: goulong, sans-serif;
+    font-size: 100%;
+    width: 700px;
+    margin: auto;
+}
+:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(0,100,0);
+}
+a:hover {
+    color: orange;
+}
+#titulosub {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+#titulosub h1 {
+    font-size: 36px;
+    text-align: center;
+}
+#subparrafo {
+    color: orange;
+    text-align: center;
+    font-size: 26px;
+}
+section form {
+    font-size: small;
+}
+section form fieldset {
+    padding: 10px 25px;
+    background-color: white;
+    border: 0px gray solid;
+    box-shadow: 3px 3px 10px grey;
+}
+section form fieldset legend {
+    padding: 5px 10px;
+    border: 1px gray solid;
+    border-radius: .5em;
+}
+.msg {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(255,250,250);
+    border: 1px red dotted;
+    font-size: 16px;
+}
+.lista {
+    margin-top: 25px;
+}
+.elimina {
+    color: #900;
+}
+.elimina:hover {
+    color: #ff0000;
+}
+
+
+/* listado Eng-esp */
+
+.contEngEsp {
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(0,100,0);
+}
+.esp {
+    border: 2px solid orange;
+    width: 40%;
+    padding: 5px;
+    float: left;
+    margin-left: 5%;
+    clear: both;
+    margin-top: 10px;
+}
+.eng {
+    border: 2px solid orange;
+    width: 40%;
+    padding: 5px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 10px;
+}

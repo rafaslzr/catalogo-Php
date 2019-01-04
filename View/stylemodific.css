@@ -1,0 +1,126 @@
+//Este syle es para los formularios modificar
+@charset "utf-8";
+* {
+    margin:  0;
+    padding: 0;
+}
+@font-face {
+    font-family: goulong;
+    src: url("../View/fonts/Goulong.ttf") format("truetype");
+}
+body {
+    font-family: goulong;
+    background-color: rgba(253,255,253,1);
+}
+#cabecera {
+    position: relative;
+    width: 600px;
+    height: 170px;
+    margin: 0 auto;
+}
+#titulo {
+    height: 80px;
+    position: relative;
+    font-family: goulong;
+    color: rgba(0,100,0,1);
+    font-size: 80px;
+    padding: 0px;
+    font-weight: bolder;
+    float: left;
+    top: 35px;
+
+}
+#titulo span {
+    font-size: 30px;
+    color: orange;
+}
+
+#bot {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 100%;
+}
+.botones {
+    display: block;
+    list-style: none;
+    height: 40px;
+}
+#boton {
+    font-family: arial;
+    float: left;
+    margin: 5px;
+    text-decoration: none;
+}
+#contProducto {
+    position: relative;
+    clear: left;
+    height: 100px;
+    width: 600px;
+    margin: 10px;
+    margin-left: 10px;
+    float: left;
+    background-color: rgba(0,100,0,1);
+    color: white;;
+    box-shadow: 5px 5px 10px grey;
+}
+#nompro {
+    margin-top: 3px;
+}
+#nompro span {
+    color: orange;
+}
+#prepro {
+    font-size: 1em; /* para que prevalezca sobre style.css*/
+}
+#prepro span {
+    color: orange;
+    font-size: 1em; /* para que prevalezca sobre style.css*/
+}
+#co1pro {
+    
+}
+#co1pro span {
+    color: orange;
+}
+#co2pro {
+    
+}
+#co2pro span {
+    color: orange;
+}
+#descripcion {
+    
+}
+#descripcion span {
+    color: orange;
+}
+
+#imagenPro {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin-right: 2px;
+}
+#formulario {
+    position: relative;
+    height: 385px;
+    width: 450px;
+    margin: 10px;
+    margin-left: 10px;
+    clear: both;
+    background-color: rgba(0,100,0,1);
+    font-family: arial;
+    color: orange;
+    box-shadow: 5px 5px 10px grey;
+}
+h3{
+    padding: 3px;
+}
+input {
+    margin-left: 3px;
+}
+textarea {
+    margin-left: 3px;
+}
+

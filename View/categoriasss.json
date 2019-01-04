@@ -1,0 +1,70 @@
+[{
+	"nombre": "perro",
+	"productos": [{
+		"nombre": "alimentacion"
+	}, {
+		"nombre": "accesorios"
+	}]
+}, {
+	"nombre": "gato",
+	"productos": [{
+		"nombre": "alimentacion"
+	}, {
+		"nombre": "accesorios"
+	}]
+}, {
+	"nombre": "aves",
+	"productos": [{
+		"nombre": "alimentacion"
+	}, {
+                "nombre": "accesorios"
+	}, {
+		"nombre": "vivos"
+	}]
+}, {
+
+	"nombre": "roedores",
+	"productos": [{
+		"nombre": "alimentacion"
+	}, {
+
+		"nombre": "accesorios"
+
+	}]
+}, {
+
+	"nombre": "peces",
+	"productos": [{
+		"nombre": "alimentacion"
+	}, {
+
+		"nombre": "accesorios"
+
+	}]
+}, {
+
+	"nombre": "ganaderia",
+	"productos": [{
+		"nombre": "cinegetica"
+	}, {
+
+		"nombre": "caballos"
+	}, {
+
+		"nombre": "ovino"
+	}, {
+
+		"nombre": "porcino"
+	}, {
+
+		"nombre": "mas"
+
+	}]
+}, {
+
+	"nombre": "varios",
+	"productos": [{
+		"nombre": "varios"
+
+	}]
+}]

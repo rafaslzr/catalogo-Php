@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+
+
+{% block contenidoIzquierda %}
+
+    <br/>
+    <nav class="navbar">
+        
+        <ul>
+            <!-- BOTON inicio (en el siguiente "a" habia un class="inicio" x error -->
+            <a href="../Controller/index.php" class="dropdown-toggle">
+                <li><div class="menu-categ">Inicio</div></li>
+            </a>
+            <!-- /// -->
+            <!-- MENU perro -->
+            <a href="#" class="dropdown-toggle"/>
+                <li>
+                    <div class="menu-categ">Perro<span class="arrow"></span></div> 
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=perro&nombreSubCat=alimentacion"><li>Alimentación</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=perro&nombreSubCat=accesorios"><li>Accesorios</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU gato-->
+            <a href="#" class="dropdown-toggle"/>
+                <li>
+                    <div class="menu-categ">Gato<span class="arrow"></span></div> 
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=gato&nombreSubCat=alimentacion"><li>Alimentación</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=gato&nombreSubCat=accesorios"><li>Accesorios</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU aves -->
+            <a href="#" class="dropdown-toggle">
+                <li>
+                    <div class="menu-categ">Aves<span class="arrow"></span></div> 
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=aves&nombreSubCat=alimentacion"><li>Alimentación</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=aves&nombreSubCat=accesorios"><li>Accesorios</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=aves&nombreSubCat=vivos"><li>Vivos</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU roedores -->
+            <a href="#" class="dropdown-toggle">
+                <li>
+                    <div class="menu-categ">Roedores<span class="arrow"></span></div>
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=roedores&nombreSubCat=alimentacion"><li>Alimentación</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=roedores&nombreSubCat=accesorios"><li>Accesorios</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU peces -->
+            <a href="#" class="dropdown-toggle">
+                <li>
+                    <div class="menu-categ">Peces<span class="arrow"></span></div>
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=peces&nombreSubCat=alimentacion"><li>Alimentación</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=peces&nombreSubCat=accesorios"><li>Accesorios</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU ganaderia -->
+            <a href="#" class="dropdown-toggle">
+                <li>
+                    <div class="menu-categ">Ganadería<span class="arrow"></span></div>
+                    <ul class="dropdown-menu" role="menu">
+                        <a href="../Controller/consulta.php?nombreCat=ganaderia&nombreSubCat=cinegetica"><li>Cinegética</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=ganaderia&nombreSubCat=caballos"><li>Caballos</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=ganaderia&nombreSubCat=ovino"><li>Ovino</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=ganaderia&nombreSubCat=porcino"><li>Porcino</li></a>
+                        <li class="divider"></li>
+                        <a href="../Controller/consulta.php?nombreCat=ganaderia&nombreSubCat=mas"><li>Mas</li></a>
+                    </ul>
+                </li>
+            </a>
+            <!-- /// -->
+            <!-- MENU varios -->
+            <a href="../Controller/consulta.php?nombreCat=varios&nombreSubCat=varios" class="dropdown-toggle">
+                <li style="margin-left: 0px; border-left: 0px solid white;"><div class="menu-categ">Varios</div></li>
+            </a>
+            <!-- /// -->
+        </ul>
+    </nav>
+    <script src="../Controller/dropmenu.js" type="text/javascript"></script>
+    <script src="../Controller/dropempresa.js" type="text/javascript"></script>
+    <script src="../Controller/dropmapa.js" type="text/javascript"></script>
+    
+    <div class="botonesme">
+        <input type="button" class="boton-botones" id="botonempresa" value="La Empresa   "/>
+        <input type="button" class="boton-botones" id="botonmapa" value="Donde estamos"/>
+    </div>
+    
+    <div class="wraper">
+        <div id="empresa">
+            <p>El cachorro es una empresa ficticia para mostrar parte de lo que 
+                <span>rafaslzr@hotmail.com</span> puede aportar a un proyecto.</p><br />
+            <p>Esta página ha sido creada con <span>Php</span> y contiene otras tecnologías como 
+                <span>Twig</span>, <span>MySQL</span>, <span>PhpMyAdmin</span>, 
+                <span>SVG</span>, <span>HTML5</span>, <span>CSS</span>, <span>
+                    JavaScript</span> y <span>JQuery</span>.</p><br />
+            <p>La información y datos que se exponen en esta página son ficticios.</p>
+        </div>
+    
+        <div id ="mapa">
+            <p>Estamos en calle <span>Larios 299</span> Málaga</p>
+            <p>Horario de apertura:</p>
+            <p>De Lunes a Viernes <span>10:00</span> a <span>20:00</span></p>
+            <p>Sábados <span>10:00</span> a <span>14:00</span></p>
+            <iframe class="dropmapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.129399818159!2d-4.4237620487118585!3d36.71945337986699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f795b1a4f35f%3A0xf3d44789b8b0e006!2sCalle+Marqu%C3%A9s+de+Larios%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1470580516330" width="1600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        {% for producto in productos %}
+            <div id="contProducto">
+                <img id="imagenPro" src="../View/img/{{producto.imagen}}" alt="" width="150" height="150" />
+                <div id="nompro">{{producto.nombrePro}}</div>
+                <div id="co1pro">{{producto.coment1}}</div>
+                <div id="co2pro">{{producto.coment2}}</div>
+                <div id="prepro"><span>{{producto.precioPro}}</span> <span>€</span></div>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <div id="footer">
+        <div class="footizq">El Cachorro </div><div><span class="footder">desarrollador: rafaslzr@hotmail.com</span></div>
+    </div>
+
+{% endblock %}
+
+
+

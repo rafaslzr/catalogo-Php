@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+
+{% block modificarGeneral %}
+    <link href="../View/style2.css" rel="stylesheet" type="text/css" />
+    <div id="bot">
+        <ul class="botones">
+            <li id="boton"><a class="hboton" href="index.php"<span>Principal</span></a></li>
+        </ul>
+    </div>   
+    <h2><br /></h2>
+
+    <div class="contEngEsp">
+        <div class="esp">
+           Esta web está diseñada para presentar el catalogo (no completo) de artículos de la citada tienda. No se va a pretender llevar ninguna contabilidad ni inventario de la misma solo mostrar una galería de imágenes con nombre, precio y los comentarios convenientemente actualizados de los mismos.
+           Cuando el dueño de la tienda me explicó en que debería consistir la página quedó claro que lo que le interesa es que sus clientes habituales puedan conocer los cambios de precios por ejemplo del pienso para vacas por toneladas que fluctúan como lo pueden hacer el oro o el petróleo.
+        </div>
+        <div class="eng">
+           This web is a not complete catalog of products on sale from the mentioned shop. There is no need to keep the books or take inventory, just show an image gallery witch contains name, price, comments and of couse, images.
+           As Owner expained how this page should be it was clear that he is interested in his current costumers to know the changes on prices for example price of feed for cows can chage as gold or petroleum do.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           En la página de inico se mostrarán los artículos que el dueño decida sin importar a que clase o subclase pertenezca. Esto lo conseguimos clicando en el único checkbox tanto del formulario de insertar producto como modificar producto, así lo podrá mostrar o no en la página principal fácilmente a conveniencia según tenga buen precio o no o diversas razones.
+        </div>
+        <div class="eng">
+           On first page will be shown the products which the owner of the shop previously has select without pay attention on class or subclasses. We do that by clicking the only checkbox located at both forms insert and modify product, so it can be shown at first page only if he wants the product to be shown.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           Otra vista de la web es la pantalla consulta, donde se muestra el resultado de filtrar los artículos por categoría y subcategoría mostrando así en esta ejemplo todas la aves vivas que el dueño ha estimado poner en su web. Conseguimos esto clicando en el menú desplegable (no tienen que estar todas las que vende). Como podemos ver es muy similar a la página de inicio pero ayudando ya al cliente a encontrar lo que realmente busca.
+        </div>
+        <div class="eng">
+           Another view of the web is query screen, where we can see all the products filtered by category and subcategory, showing this way all the alive birds that the owner put on the database. We do that just choosing what we want at the dropdown menú (don't has to be all the birds on the shop). As you can see is very similar to the first screen but the costumar can find here exactly what they are looking for.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           Para entrar a los formularios cambiar index por acceso en la barra de direcciones dando lugar a la aparición del control de acceso.
+        </div>
+        <div class="eng">
+           To break on through to the forms you got to change index for acceso at address bar and it make control acces appear.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           Una vez introducida la clave de acceso nos aparece una vista que nos permite elegir las distintas opciones para alterar el contenido de la página, podemos acceder al formulario para introducir un nuevo artículo, otro formulario que nos permite subir o borrar imágenes en el servidor y también tenemos una vista reducida de todos los artículos que aunque sea mas pequeña incluye un campo mas llamado descripción para ayudar al propietario a organizar mejor sus productos pero que nunca será visto por el cliente, cada una de estas vistas del producto dispone de un botón para borrar así como de otro botón que nos llevaría al formulario para modificar los productos
+        </div>
+        <div class="eng">
+           Once the password is accepted we can see a view which allow to select several options to change the content of the web page, we can access to a form to inset a new product, or just another form to upload or delete images to the server we have a reduced view of each product where the owner can see one more field to help himself to keep his web tidy each one of these reduced views have a button to delete the product and another button to access to a form where he can change somethin in an existing product.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           Pulsando el botón insertar producto aparece el formulario crear un nuevo producto con sus diferentes campos tiene la funcionalidad de que para incluir la imagen nos muestra en un desplegable todas las imágenes que tenemos alojadas en el servidor y los campos categoría y subcatgoría que son requeridos ya que sin ellos no podríamos organizar el producto en la base de datos,
+           También tenemos  el ya comentado checkbox aparezca en página principal que decidirá si este producto será visible en la página principal o no aunque en el futuro esto podrá modificarse al igual que tantas cosas.
+        </div>
+        <div class="eng">
+           Clicking on insertar producto button apears a form called crear un nuevo producto which has different fields and the functionality to include all the images stored at the server in a dropdown menú and more dropdown menus for category and subcategory.
+           It can be seen the checkbox which is used to decide if a product is shown in the first page, it will be able to be changed in the future as all the rest of things.
+        </div>        
+    </div>
+    
+    <div class="contEngEsp">
+        <div class="esp">
+           Nos encontramos ahora con el  formulario que nos permite subir imágenes nuevas al servidor ,siempre reducidas a un tamaño de 100 x 100 pixeles (si no el propietario podría llenar el servidor con pocas imágenes), lo primero que nos encontramos es que nos da un listado con las imágenes que ya tenemos alojadas y la opción de borrarlas a un solo click justo al lado, también podemos ver el botón seleccionar archivo que nos  llevará a donde queramos de nuestro ordenador para encontrar la imagen deseada y subirla, una vez elegida sólo hay que hacer click en enviar y ya nos la habrá subido al servidor
+           Y añadido a la lista de imágenes que tenemos disponible, cuando vayamos a insertar un nuevo producto se debe subir la imagen primero en este formulario para así tenerla disponible en el combo imagen del formulario de insertar producto.
+
+           Admite los formatos jpg, png y gif.
+        </div>
+        <div class="eng">
+           Now it's time for uploading form it allow us to upload images to the server, allways reducer to a size of 100 x 100 pixels (if this isn't done el owner of the shop will surely full fill the server with a couple of pictures), as we watch the screen we can see a list of all the images that are stored at the server and the option to delete them just at the right of the name. Can be seen too the botton to go any where in the computer to choose a new image to upload, once the image is choosen just need to click on aceptar and it's uploaded at the server.
+           Admits jpg, png and gif formats.
+        </div>        
+    </div>
+
+
+{% endblock %}
+
+
+

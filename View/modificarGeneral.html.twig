@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+{% block modificarGeneral %}
+    <link href="../View/stylemodific.css" rel="stylesheet" type="text/css" />
+    <div id="bot">
+        <ul class="botones">
+            <li id="boton"><a class="hboton" href="index.php"<span>Principal</span></a></li>
+            <li id="boton"><a class="hboton" href="../Controller/insertarFormulario.php"<span>Formulario nuevo producto</span></a></li>
+            <li id="boton"><a class="hboton" href="../Controller/subirImagen.php"<span>Subir/eliminar imagen</span></a></li>
+        </ul>
+    </div>   
+    <h2><br /></h2>
+
+    {% for producto in productos %}
+        <div id="contProducto">
+            <img id="imagenPro" src="../View/img/{{producto.imagen}}" alt="" width="150" height="150" />
+            <p id="nompro"><span>Nombre: </span>{{producto.nombrePro}}</p>
+            <p id="co1pro"><span>Comentario nº1: </span>{{producto.coment1}}</p>
+            <p id="co2pro"><span>Comentario nº2: </span>{{producto.coment2}}</p>
+            <p id="prepro"><span>Precio: </span>{{producto.precioPro}} €</p>
+            <p id="descripcion"><span>Descripción: </span>{{producto.descripcion}} </p>
+            <a class="hbotonborra"href="../Controller/borraProducto.php?idPro={{producto.idPro}}">Borrar</a>
+            <a class="hbotonmodi"href="../Controller/modificaAFormulario.php?idPro={{producto.idPro}}">Modificar</a>
+        </div>
+
+    {% endfor %}
+
+
+{% endblock %}
+
+
+

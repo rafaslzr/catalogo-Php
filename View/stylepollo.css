@@ -1,0 +1,299 @@
+/*animacion pollito*/
+
+#contenedor {
+    position: absolute;
+    height:200px;
+    width: 200px;
+    right: 2px;
+    top: 20px;
+    overflow: hidden;
+    -ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: scale(0.5,0.5); /* Safari */
+    transform: scale(0.5,0.5);
+}
+#picoarriba {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-image: url(../View/imgPollito/picoarriba.png);
+    background-repeat: no-repeat;
+    top: 35px;
+    left: 10px;
+
+    animation-name: picoArriba;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes picoArriba{
+    from{
+
+    }
+    56%{
+        transform: rotate(-0rad);
+    }
+    57%{   
+
+        transform: rotate(0.5rad);
+    }
+    58%{
+
+    }
+    60%{
+        left: 10px;
+        transform: rotate(-0rad);
+    }
+    65%{
+
+    }
+    69%{
+        transform: rotate(-0rad);
+    }
+    70%{   
+
+        transform: rotate(0.5rad);
+    }
+    71%{
+
+    }
+    72%{
+        left: 10px;
+        transform: rotate(-0rad);
+    }
+    100%{
+
+    }
+}
+#picoabajo {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    background-image: url(../View/imgPollito/picoabajo.png);
+    background-repeat: no-repeat;
+    top: 54px;
+    left: 15px;
+
+    animation-name: picoAbajo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes picoAbajo{
+    from{
+
+    }
+    56%{
+        transform: rotate(-0rad);
+    }
+    57%{   
+
+        transform: rotate(-0.5rad);
+    }
+    58%{
+
+    }
+    60%{
+        left: 10px;
+        transform: rotate(-0rad);
+    }
+    65%{
+
+    }
+    69%{
+        transform: rotate(-0rad);
+    }
+    70%{   
+
+        transform: rotate(-0.5rad);
+    }
+    71%{
+
+    }
+    72%{
+        left: 10px;
+        transform: rotate(-0rad);
+    }
+    100%{
+
+    }
+}
+#cabeza {
+    position: absolute;
+    height: 77px;
+    width: 77px;
+    background-image: url(../View/imgPollito/cabeza.png);
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 30px;
+    z-index: 1;
+
+    animation-name: cabeza;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes cabeza{
+    from{
+
+    }to{
+
+    }
+}
+#cabezapico {
+    position: absolute;
+    height: 77px;
+    width: 77px;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    animation-name: cabezapico;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes cabezapico{
+    from{
+       top: -10px;
+        left: 5px; 
+    }
+    2%{
+        left: -20px;
+    }
+    5%{   
+        top: 111px;
+        left: -20px;
+        transform: rotate(-1rad);
+    }
+    8%{
+        left: -20px;
+    }
+    10%{
+        top: -10px;
+        left: 5px;
+        transform: rotate(-0rad);
+    }
+    15{
+       top: -10px;
+        left: 5px; 
+    }
+    18%{
+        left: -20px;
+    }
+    20%{   
+        top: 111px;
+        left: -20px;
+        transform: rotate(-1rad);
+    }
+    23%{
+        left: -20px;
+    }
+    25%{
+        top: -10px;
+        left: 5px;
+        transform: rotate(-0rad);
+    }
+    100%{
+        top: -10px;
+        left: 5px;
+    }
+}
+#cuerpo {
+    position: absolute;
+    height: 120px;
+    width: 135px;
+    background-image: url(../View/imgPollito/cuerpo.png);
+    background-repeat: no-repeat;
+    top: 55px;
+    left: 50px;
+    z-index: -7;
+
+    animation-name: cuerpo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes cuerpo{
+    from{
+       top: 55x;
+        left: 50px; 
+    }
+    5%{   
+        top: 44px;
+        left: 70px;
+        transform: rotate(-0.5rad);
+    }
+    10%{
+        top: 55px;
+        left: 50px;
+        transform: rotate(-0rad);
+    }
+    15{
+       top: 55px;
+        left: 50px; 
+    }
+    20%{   
+        top: 44px;
+        left: 70px;
+        transform: rotate(-0.5rad);
+    }
+    25%{
+        top: 55px;
+        left: 50px;
+        transform: rotate(-0rad);
+    }
+    100%{
+        top: 55px;
+        left: 50px;
+    }
+}
+#patadel {
+    position: absolute;
+    height: 150px;
+    width: 55px;
+    background-image: url(../View/imgPollito/patadel.png);
+    background-repeat: no-repeat;
+    top: 140px;
+    left: 70px;
+    z-index: -9;
+
+    animation-name: patadel;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes patadel{
+    from{
+
+    }to{
+
+    }
+}
+#patatra {
+    position: absolute;
+    height: 150px;
+    width: 55px;
+    background-image: url(../View/imgPollito/patatra.png);
+    background-repeat: no-repeat;
+    top: 140px;
+    left: 110px;
+    z-index: -10;
+
+    animation-name: patatra;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes patatra{
+    from{
+
+    }to{
+
+    }
+}

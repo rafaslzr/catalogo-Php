@@ -1,0 +1,70 @@
+/* barra lista-botones */
+
+    .navbar {
+        /*height:40px;*/
+        background-color: rgba(0,100,0,1);
+        color: white;
+        border-bottom: 2px solid white;
+        font-size: 18px;
+        overflow: hidden;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        color: orange;
+    }
+
+    .navbar li {
+        /*float: left;este hace que el menu sea vertical /hor*/
+        padding: 8px 8px;
+        cursor: pointer;
+        /*transition-duration: .5s;*/
+        font-weight: 300;
+        /*height: 24px;este hace que se cree el espacio*/
+        border-right: 2px solid white;
+        min-width: 120px;
+
+    }
+    .navbar li:hover {
+        background: rgba(0,80,0,1);
+        /*height: 24px;*/
+        color: orange;
+    }
+    .navbar ul li:hover {
+        color: orange;
+    }
+    .dropdown-menu {
+        /*margin-left: -10px;*/
+        /*padding: 0px;*/
+        /*width: auto;*/
+        background: rgba(0,100,0,1);
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        overflow: hidden;
+        /*position: absolute;*/
+        /*top: 229px;*/
+        display: none;
+    }
+    /*bajo el menu*/
+    .botonesme {
+        width: 310px;
+    }
+    .wraper {
+        width: 320px;
+        border: 1px dotted #ff0000;
+    }
+    #mapa {
+        width: 310px;
+        height: 332px;
+    }
+    #empresa {
+        width: 290px;
+    }
+    .dropmapa {
+        width: 310px;
+        height: 200px;
+    }

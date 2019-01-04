@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <title>El Cachorro</title>
+        <link rel="icon" type="image/png" href="../View/favicon/favicon.ico" /><!--chrome-->
+        <link rel="icon" type="image/svg+xml" href="../View/favicon/tigrepro.svg"><!--firefox-->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link href="../View/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/arial.js"></script>
+        <script type="text/javascript" src="js/cuf_run.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/jquery.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="cabecera">
+            <div id="titulo">
+                <p>El Cachorro</p><p id="actividad">Tienda de animales</p>
+                
+            </div>
+            <div id="logocab">
+                <img src="../View/favicon/tigrepro.svg" 
+                     alt="El Cachorro" />
+            </div>
+            <script src="../Controller/dropmenumovil.js" type="text/javascript"></script>
+            <script src="../Controller/aspa.js" type="text/javascript"></script>
+            <div>
+                <div id="button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <input type="button" id="botonhamburg" value=''/>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        {% block contenidoIzquierda %}
+
+        {% endblock %}
+
+        {% block modificarGeneral %}
+
+        {% endblock %}
+
+
+    </body>
+</html>
